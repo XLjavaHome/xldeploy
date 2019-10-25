@@ -6,7 +6,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * Created by pkumar on 8/27/17.
+ * Created with 徐立
+ *
+ * @author 徐立
+ * @version 1.0 2019-10-25 19:05
+ * To change this template use File | Settings | File Templates.
+ * @date 2019-10-25
+ * @time 19:05
  */
 @Configuration
 public class AppConfig {
