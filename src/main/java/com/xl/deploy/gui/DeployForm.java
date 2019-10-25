@@ -1,6 +1,6 @@
 package com.xl.deploy.gui;
 
-import com.xl.deloy.service.DeploymentPackageService;
+import com.xl.deploy.service.DeploymentPackageService;
 import com.xl.deploy.entity.DeploymentEntity;
 import java.awt.Dimension;
 import java.awt.Insets;

@@ -1,6 +1,6 @@
-package com.xl.deloy.service.impl;
+package com.xl.deploy.service.impl;
 
-import com.xl.deloy.service.DeploymentPackageService;
+import com.xl.deploy.service.DeploymentPackageService;
 import com.xl.deploy.entity.DeploymentEntity;
 import com.xl.util.DateUtil;
 import com.xl.util.FileUtil;

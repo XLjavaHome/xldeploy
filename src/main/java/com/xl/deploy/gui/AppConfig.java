@@ -1,7 +1,7 @@
 package com.xl.deploy.gui;
 
-import com.xl.deloy.service.DeploymentPackageService;
-import com.xl.deloy.service.impl.DeploymentPackageServiceImpl;
+import com.xl.deploy.service.DeploymentPackageService;
+import com.xl.deploy.service.impl.DeploymentPackageServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
