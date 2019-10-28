@@ -49,15 +49,10 @@
         <properties/>
         <border type="none"/>
         <children>
-          <vspacer id="e0a7f">
-            <constraints>
-              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </vspacer>
           <scrollpane id="352dc" binding="codePanel">
             <constraints>
-              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                <preferred-size width="500" height="500"/>
+              <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="300" height="400"/>
               </grid>
             </constraints>
             <properties/>
@@ -66,24 +61,8 @@
               <component id="c7f6f" class="javax.swing.JTextArea" binding="code" default-binding="true">
                 <constraints/>
                 <properties>
-                  <toolTipText value="code.txt"/>
-                </properties>
-              </component>
-            </children>
-          </scrollpane>
-          <scrollpane id="1ed27" binding="docPane">
-            <constraints>
-              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                <preferred-size width="500" height="500"/>
-              </grid>
-            </constraints>
-            <properties/>
-            <border type="none"/>
-            <children>
-              <component id="486c8" class="javax.swing.JTextArea" binding="textArea2" default-binding="true">
-                <constraints/>
-                <properties>
-                  <toolTipText value="发布文档中的内容"/>
+                  <text value="code.txt里的内容"/>
+                  <toolTipText value="code.txt里的内容"/>
                 </properties>
               </component>
             </children>
@@ -111,8 +90,8 @@
                   </grid>
                 </constraints>
                 <properties>
-                  <text value=""/>
-                  <toolTipText value="任务名称"/>
+                  <text value="任务或BUG名称"/>
+                  <toolTipText value="任务或BUG名称"/>
                 </properties>
               </component>
             </children>

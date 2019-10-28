@@ -36,4 +36,11 @@ public class DeploymentEntity {
      * 任务名称
      */
     private String taskName;
+    
+    public DeploymentEntity(String author, boolean flag, String codeString, String taskName) {
+        this.author = author;
+        this.flag = flag;
+        this.codeString = codeString;
+        this.taskName = taskName;
+    }
 }

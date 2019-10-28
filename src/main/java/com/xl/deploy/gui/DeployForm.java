@@ -48,7 +48,6 @@ public class DeployForm extends JFrame {
     private JTextArea code;
     private JTextArea textArea2;
     private JScrollPane codePanel;
-    private JScrollPane docPane;
     private JTextField taskNameTx;
     private JTextField authorField;
     private boolean writeAuthor = false;
@@ -121,7 +120,7 @@ public class DeployForm extends JFrame {
                     writeAuthor = true;
                 }
                 //看作者是否变更，如果作者变更的话则保持
-                DeploymentEntity entity = new DeploymentEntity(authorText, b, code.getText(), textArea2.getText(),
+                DeploymentEntity entity = new DeploymentEntity(authorText, b, code.getText(),
                                                                taskNameTx.getText());
                 service.createFile(entity);
             } catch (IOException e1) {
@@ -211,20 +210,8 @@ public class DeployForm extends JFrame {
         code = new JTextArea();
         code.setToolTipText("code.txt");
         codePanel.setViewportView(code);
-        docPane = new JScrollPane();
-        panel3.add(docPane, new com.intellij.uiDesigner.core.GridConstraints(2, 2, 1, 1,
-                                                                             com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER,
-                                                                             com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH,
-                                                                             com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK
-                                                                             |
-                                                                             com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW,
-                                                                             com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK
-                                                                             |
-                                                                             com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW,
-                                                                             null, new Dimension(500, 500), null, 0, false));
         textArea2 = new JTextArea();
         textArea2.setToolTipText("发布文档中的内容");
-        docPane.setViewportView(textArea2);
         BUGDelpoyButton = new JButton();
         BUGDelpoyButton.setText("BUG部署包");
         panel3.add(BUGDelpoyButton, new com.intellij.uiDesigner.core.GridConstraints(0, 2, 1, 1,
