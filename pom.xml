@@ -20,6 +20,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId> <!--没有版本号会报错-->
                 <version>2.1.6.RELEASE</version>
                 <configuration>
+                    <outputDirectory>C:\Users\Administrator\Desktop\deploy</outputDirectory>
                     <mainClass>com.xl.deploy.gui.Main</mainClass>
                     <executable>true</executable>
                 </configuration>
