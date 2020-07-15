@@ -16,21 +16,16 @@
         <finalName>deploy</finalName>
         <plugins>
             <plugin>
-                <!--该插件主要用途：构建可执行的JAR，运行maven的package即可-->
-                <!--没有加入该插件不会将所有的都打包 -->
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <!--没有版本号会报错-->
+                <artifactId>spring-boot-maven-plugin</artifactId> <!--没有版本号会报错-->
                 <version>2.1.6.RELEASE</version>
                 <configuration>
                     <mainClass>com.xl.deploy.gui.Main</mainClass>
                     <executable>true</executable>
                 </configuration>
-                <!--没有的话不能运行jar-->
                 <executions>
                     <execution>
-                        <goals>
-                            <!--可以把依赖的包都打包到生成的Jar包中-->
+                        <goals> <!--可以把依赖的包都打包到生成的Jar包中-->
                             <goal>repackage</goal>
                         </goals>
                     </execution>
